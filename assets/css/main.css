@@ -228,6 +228,8 @@ không tác động đến các thẻ khác */
     padding: 64px 16px 112px /*112=64 + 48*/;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading{

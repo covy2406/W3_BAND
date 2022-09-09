@@ -1,4 +1,3 @@
-
 <!-- ! + shift + tab show ra doctype -->
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +22,7 @@
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
@@ -264,19 +263,30 @@
             }
             else
             {
-                header.style.height = null;
+                header.style.height = null;//ẩn menu
             }
         }
 
         //tự động đóng khi chọn phần tử trong mobile menu
-        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
-        for(var i = 0; i < menuItems.length; i++)
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');//chọn tất cả thẻ a có #
+
+        for(var i = 0; i < menuItems.length; i++)//lặp qua tất cả các thẻ a
         {
             var menuItem = menuItems[i];
-            
-            menuItem.onclick = function()
+            //console.log(menuItem.nextElementSibling) //kiểm tra anh chị em liền kề
+            menuItem.onclick = function(event)
             {
-                header.style.height = null;
+                //console.log(this)
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                //nếu có anh chị em liền kề & anh chị em liền kề đó có chứa class subnav thì biết được isParentMenu là menu cha
+                if(isParentMenu)//nếu là parentmenu thì ẩn menu đi
+                {
+                    header.style.height = null;
+                }
+                else
+                {
+                    event.preventDefault();//bỏ qua cái mặt định
+                }
             }
         }
 

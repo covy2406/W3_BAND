@@ -63,17 +63,17 @@
                 </p>
 
                 <div class="row member-list">
-                    <div class="colum colum-three text-center">
+                    <div class=" colum colum-three mobile-colum-full margintop-16 text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/image/bandmember.jpg" alt="Name" class="member-avartar">
                     </div>
 
-                    <div class="colum colum-three text-center">
+                    <div class=" colum colum-three mobile-colum-full margintop-16 text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/image/bandmember.jpg" alt="Name" class="member-avartar">
                     </div>
 
-                    <div class="colum colum-three text-center">
+                    <div class=" colum colum-three mobile-colum-full margintop-16 text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/image/bandmember.jpg" alt="Name" class="member-avartar">
                     </div>
@@ -96,7 +96,7 @@
 
                     <!--Places-->
                     <div class="row places-list">
-                        <div class="colum colum-three">
+                        <div class="colum colum-three mobile-colum-full margintop-16">
                             <img src="./assets/image/newyork.jpg" alt="NewYork" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
@@ -106,7 +106,7 @@
                             </div>
                         </div>
 
-                        <div class="colum colum-three">
+                        <div class="colum colum-three mobile-colum-full margintop-16">
                             <img src="./assets/image/paris.jpg" alt="Paris" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Paris</h3>
@@ -116,7 +116,7 @@
                             </div>
                         </div>
 
-                        <div class="colum colum-three">
+                        <div class="colum colum-three mobile-colum-full margintop-16">
                             <img src="./assets/image/sanfran.jpg" alt="San Francisco" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">San Francisco</h3>
@@ -274,6 +274,7 @@
         {
             var menuItem = menuItems[i];
             //console.log(menuItem.nextElementSibling) //kiểm tra anh chị em liền kề
+            
             menuItem.onclick = function(event)
             {
                 //console.log(this)
@@ -281,11 +282,11 @@
                 //nếu có anh chị em liền kề & anh chị em liền kề đó có chứa class subnav thì biết được isParentMenu là menu cha
                 if(isParentMenu)//nếu là parentmenu thì ẩn menu đi
                 {
-                    header.style.height = null;
+                    event.preventDefault();//bỏ qua cái mặt định
                 }
                 else
                 {
-                    event.preventDefault();//bỏ qua cái mặt định
+                    header.style.height = null;
                 }
             }
         }

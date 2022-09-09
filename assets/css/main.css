@@ -59,6 +59,7 @@ html{
 
 .colum-three{
     width: calc(100% / 3);
+    /* width: 100%; */
 }
 
 .colum-two{
@@ -272,7 +273,7 @@ không tác động đến các thẻ khác */
 }
 
 #content .member-list{
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 
@@ -328,7 +329,7 @@ không tác động đến các thẻ khác */
 
 /*Places*/
 .places-list{
-    margin-top: 32px;
+    margin-top: 16px;
     /* padding-bottom: 48px; */
    
 }

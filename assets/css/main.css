@@ -74,6 +74,10 @@ html{
     margin-top: 16px !important;
 }
 
+.margintop-32{
+    margin-top: 32px !important;
+}
+
 .btn{
     color: white;
     background-color: black;
@@ -83,6 +87,7 @@ html{
     margin-top: 15px;
     display: inline-block;
     border: none;
+    text-align: center;
 }
 
 .pull-right{

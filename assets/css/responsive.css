@@ -10,8 +10,9 @@
 
 /*mobile:*/
 @media only screen and (max-width: 739px){
+    .mobile-full-width, /*mobile-full-with cho nút send*/
     .mobile-colum-full{
-        width: 100%;
+        width: 100% !important;
     }
 
     #header{
@@ -54,5 +55,13 @@
 
     #content .member-avartar{
         width: 60%;
+    }
+
+    .contact-form{
+        margin-top: 16px;
+    }
+
+    #contact-email{
+        margin-top: 8px;
     }
 }

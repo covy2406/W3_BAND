@@ -180,10 +180,6 @@ không tác động đến các thẻ khác */
     display: block;
 }
 
-#nav li:hover .subnav{
-    display: block;
-}
-
 #nav > li:hover > a,
 #nav .subnav li:hover a{
     color: black;
@@ -199,6 +195,10 @@ không tác động đến các thẻ khác */
     position: absolute;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav li:hover .subnav{
+    display: block;
 }
 
 #nav .subnav a{

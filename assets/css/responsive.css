@@ -8,6 +8,27 @@
 
 }
 
+/* tablet & mobile */
+@media (max-width: 1023px) /*Review Fix UX*/
+{
+    .btn{
+        padding: 15px 16px;
+    }
+
+    .contact-form .form-control{
+        padding: 15px;
+    }
+
+    .social-list{
+        font-size: 48px;
+        margin: 0 8px;
+    }
+
+    .footer .social-list a{
+        margin: 0 8px;
+    }
+}
+
 /*mobile:*/
 @media only screen and (max-width: 739px){
     .mobile-full-width, /*mobile-full-with cho nút send*/
